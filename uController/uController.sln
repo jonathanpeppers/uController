@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uController", "uController\uController.csproj", "{D27FBE44-5BEC-4206-9B3F-5F6A6F6289D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uController.API", "uController.API\uController.API.csproj", "{3F0B34B5-1445-48E9-A4CB-10F26DA30038}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.iPhone", "..\System.iPhone\System.iPhone.csproj", "{E7587240-02DE-4B41-933E-A3DEB0D469B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HtmlAgilityPack", "..\HtmlAgilityPack\HtmlAgilityPack.csproj", "{1F6318A8-B3E7-4B2B-92DC-F7530B2D0470}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Cydia|iPhone = Cydia|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F6318A8-B3E7-4B2B-92DC-F7530B2D0470}.Cydia|iPhone.ActiveCfg = Cydia|iPhone
+		{1F6318A8-B3E7-4B2B-92DC-F7530B2D0470}.Cydia|iPhone.Build.0 = Cydia|iPhone
+		{1F6318A8-B3E7-4B2B-92DC-F7530B2D0470}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{1F6318A8-B3E7-4B2B-92DC-F7530B2D0470}.Debug|iPhone.Build.0 = Debug|iPhone
+		{1F6318A8-B3E7-4B2B-92DC-F7530B2D0470}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{1F6318A8-B3E7-4B2B-92DC-F7530B2D0470}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{1F6318A8-B3E7-4B2B-92DC-F7530B2D0470}.Release|iPhone.ActiveCfg = Release|iPhone
+		{1F6318A8-B3E7-4B2B-92DC-F7530B2D0470}.Release|iPhone.Build.0 = Release|iPhone
+		{1F6318A8-B3E7-4B2B-92DC-F7530B2D0470}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{1F6318A8-B3E7-4B2B-92DC-F7530B2D0470}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{3F0B34B5-1445-48E9-A4CB-10F26DA30038}.Cydia|iPhone.ActiveCfg = Cydia|iPhone
+		{3F0B34B5-1445-48E9-A4CB-10F26DA30038}.Cydia|iPhone.Build.0 = Cydia|iPhone
+		{3F0B34B5-1445-48E9-A4CB-10F26DA30038}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{3F0B34B5-1445-48E9-A4CB-10F26DA30038}.Debug|iPhone.Build.0 = Debug|iPhone
+		{3F0B34B5-1445-48E9-A4CB-10F26DA30038}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{3F0B34B5-1445-48E9-A4CB-10F26DA30038}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{3F0B34B5-1445-48E9-A4CB-10F26DA30038}.Release|iPhone.ActiveCfg = Release|iPhone
+		{3F0B34B5-1445-48E9-A4CB-10F26DA30038}.Release|iPhone.Build.0 = Release|iPhone
+		{3F0B34B5-1445-48E9-A4CB-10F26DA30038}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{3F0B34B5-1445-48E9-A4CB-10F26DA30038}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{D27FBE44-5BEC-4206-9B3F-5F6A6F6289D2}.Cydia|iPhone.ActiveCfg = Cydia|iPhone
+		{D27FBE44-5BEC-4206-9B3F-5F6A6F6289D2}.Cydia|iPhone.Build.0 = Cydia|iPhone
+		{D27FBE44-5BEC-4206-9B3F-5F6A6F6289D2}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{D27FBE44-5BEC-4206-9B3F-5F6A6F6289D2}.Debug|iPhone.Build.0 = Debug|iPhone
+		{D27FBE44-5BEC-4206-9B3F-5F6A6F6289D2}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{D27FBE44-5BEC-4206-9B3F-5F6A6F6289D2}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{D27FBE44-5BEC-4206-9B3F-5F6A6F6289D2}.Release|iPhone.ActiveCfg = Release|iPhone
+		{D27FBE44-5BEC-4206-9B3F-5F6A6F6289D2}.Release|iPhone.Build.0 = Release|iPhone
+		{D27FBE44-5BEC-4206-9B3F-5F6A6F6289D2}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{D27FBE44-5BEC-4206-9B3F-5F6A6F6289D2}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{E7587240-02DE-4B41-933E-A3DEB0D469B9}.Cydia|iPhone.ActiveCfg = Cydia|iPhone
+		{E7587240-02DE-4B41-933E-A3DEB0D469B9}.Cydia|iPhone.Build.0 = Cydia|iPhone
+		{E7587240-02DE-4B41-933E-A3DEB0D469B9}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{E7587240-02DE-4B41-933E-A3DEB0D469B9}.Debug|iPhone.Build.0 = Debug|iPhone
+		{E7587240-02DE-4B41-933E-A3DEB0D469B9}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{E7587240-02DE-4B41-933E-A3DEB0D469B9}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{E7587240-02DE-4B41-933E-A3DEB0D469B9}.Release|iPhone.ActiveCfg = Release|iPhone
+		{E7587240-02DE-4B41-933E-A3DEB0D469B9}.Release|iPhone.Build.0 = Release|iPhone
+		{E7587240-02DE-4B41-933E-A3DEB0D469B9}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{E7587240-02DE-4B41-933E-A3DEB0D469B9}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = uController\uController.csproj
+	EndGlobalSection
+EndGlobal

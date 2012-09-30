@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1F6318A8-B3E7-4B2B-92DC-F7530B2D0470}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>HtmlAgilityPack</RootNamespace>
+    <AssemblyName>HtmlAgilityPack</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;iPhone</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchUseArmv7>false</MtouchUseArmv7>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+    <DefineConstants>iPhone</DefineConstants>
+    <MtouchUseArmv7>false</MtouchUseArmv7>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;iPhone</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchUseArmv7>false</MtouchUseArmv7>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <DefineConstants>iPhone</DefineConstants>
+    <MtouchUseArmv7>false</MtouchUseArmv7>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Cydia|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Cydia</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchUseArmv7>false</MtouchUseArmv7>
+    <DefineConstants>iPhone</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Cydia|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Cydia</OutputPath>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Compile Include="crc32.cs" />
+    <Compile Include="EncodingFoundException.cs" />
+    <Compile Include="HtmlAttribute.cs" />
+    <Compile Include="HtmlAttributeCollection.cs" />
+    <Compile Include="HtmlCmdLine.cs" />
+    <Compile Include="HtmlCommentNode.cs" />
+    <Compile Include="HtmlConsoleListener.cs" />
+    <Compile Include="HtmlDocument.cs" />
+    <Compile Include="HtmlDocument.Xpath.cs" />
+    <Compile Include="HtmlElementFlag.cs" />
+    <Compile Include="HtmlEntity.cs" />
+    <Compile Include="HtmlNameTable.cs" />
+    <Compile Include="HtmlNode.cs" />
+    <Compile Include="HtmlNode.Dynamic.cs" />
+    <Compile Include="HtmlNode.Xpath.cs" />
+    <Compile Include="HtmlNodeCollection.cs" />
+    <Compile Include="HtmlNodeNavigator.cs" />
+    <Compile Include="HtmlNodeType.cs" />
+    <Compile Include="HtmlParseError.cs" />
+    <Compile Include="HtmlParseErrorCode.cs" />
+    <Compile Include="HtmlTextNode.cs" />
+    <Compile Include="HtmlWeb.cs" />
+    <Compile Include="HtmlWeb.Xpath.cs" />
+    <Compile Include="HtmlWebException.cs" />
+    <Compile Include="IOLibrary.cs" />
+    <Compile Include="MixedCodeDocument.cs" />
+    <Compile Include="MixedCodeDocumentCodeFragment.cs" />
+    <Compile Include="MixedCodeDocumentFragment.cs" />
+    <Compile Include="MixedCodeDocumentFragmentList.cs" />
+    <Compile Include="MixedCodeDocumentFragmentType.cs" />
+    <Compile Include="MixedCodeDocumentTextFragment.cs" />
+    <Compile Include="NameValuePair.cs" />
+    <Compile Include="NameValuePairList.cs" />
+    <Compile Include="Trace.cs" />
+    <Compile Include="Trace.FullFramework.cs" />
+    <Compile Include="Utilities.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+</Project>

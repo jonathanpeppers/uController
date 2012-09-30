@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1367BE14-4A0E-4A5D-A791-DFCBCF8C3060}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>uController.Tests</RootNamespace>
+    <AssemblyName>uController.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\packages\HtmlAgilityPack.1.4.4\lib\Net40\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDependentAssemblyPaths Condition=" '$(VS100COMNTOOLS)' != '' " Include="$(VS100COMNTOOLS)..\IDE\PrivateAssemblies">
+      <Visible>False</Visible>
+    </CodeAnalysisDependentAssemblyPaths>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\uController\uController.API\Enumerations.cs">
+      <Link>API\Enumerations.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\uController\uController.API\ListResponse.cs">
+      <Link>API\ListResponse.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\uController\uController.API\Search\BtJunkieProvider.cs">
+      <Link>API\Search\BtJunkieProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\uController\uController.API\Search\Comment.cs">
+      <Link>API\Search\Comment.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\uController\uController.API\Search\ExtendedSearchEventArgs.cs">
+      <Link>API\Search\ExtendedSearchEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\uController\uController.API\Search\ISearchProvider.cs">
+      <Link>API\Search\ISearchProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\uController\uController.API\Search\MiniNovaProvider.cs">
+      <Link>API\Search\MiniNovaProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\uController\uController.API\Search\PirateBayProvider.cs">
+      <Link>API\Search\PirateBayProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\uController\uController.API\Search\RssProvider.cs">
+      <Link>API\Search\RssProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\uController\uController.API\Search\SearchEventArgs.cs">
+      <Link>API\Search\SearchEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\uController\uController.API\Search\TorrentFile.cs">
+      <Link>API\Search\TorrentFile.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\uController\uController.API\Search\TorrentUrl.cs">
+      <Link>API\Search\TorrentUrl.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\uController\uController.API\Search\TorrentUrlDetails.cs">
+      <Link>API\Search\TorrentUrlDetails.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\uController\uController.API\Torrent.cs">
+      <Link>API\Torrent.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\uController\uController.API\TorrentErrorEventArgs.cs">
+      <Link>API\TorrentErrorEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\uController\uController.API\TorrentEventArgs.cs">
+      <Link>API\TorrentEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\uController\uController.API\TorrentServer.cs">
+      <Link>API\TorrentServer.cs</Link>
+    </Compile>
+    <Compile Include="iPhone\Execute.cs" />
+    <Compile Include="iPhone\Extensions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PirateBayTests.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\System.Json\System.Json.csproj">
+      <Project>{82DD512F-6810-4BC6-82AB-02A9DC8ADB35}</Project>
+      <Name>System.Json</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

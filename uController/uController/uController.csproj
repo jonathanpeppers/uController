@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D27FBE44-5BEC-4206-9B3F-5F6A6F6289D2}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>uController</RootNamespace>
+    <AssemblyName>uController</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchDebug>True</MtouchDebug>
+    <MtouchI18n />
+    <MtouchLink>None</MtouchLink>
+    <MtouchUseArmv7>false</MtouchUseArmv7>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchI18n />
+    <MtouchUseArmv7>false</MtouchUseArmv7>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>True</MtouchDebug>
+    <MtouchI18n />
+    <MtouchUseArmv7>false</MtouchUseArmv7>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchI18n />
+    <MtouchUseArmv7>false</MtouchUseArmv7>
+    <BuildIpa>True</BuildIpa>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Cydia|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\iPhone\Cydia</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchI18n />
+    <MtouchUseArmv7>false</MtouchUseArmv7>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Cydia|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Cydia</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <MtouchI18n />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+    <Reference Include="System.Json" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="Controllers\AppDelegate.cs" />
+    <Compile Include="Models\Server.cs" />
+    <Compile Include="Models\Settings.cs" />
+    <Compile Include="Controllers\SettingsDelegate.cs" />
+    <Compile Include="Controllers\TextFieldCellController.cs" />
+    <Compile Include="Controllers\TorrentCellController.cs" />
+    <Compile Include="Controllers\TorrentsDelegate.cs" />
+    <Compile Include="Models\TorrentsRefreshedMessage.cs" />
+    <Compile Include="Controllers\SearchDisplayDelegate.cs" />
+    <Compile Include="Models\SearchMessage.cs" />
+    <Compile Include="Controllers\SearchResultCellController.cs" />
+    <Compile Include="Controllers\SearchDelegate.cs" />
+    <Compile Include="Controllers\TabController.cs" />
+    <Compile Include="Controllers\TorrentDetailsDelegate.cs" />
+    <Compile Include="Controllers\SearchDetailsDelegate.cs" />
+    <Compile Include="Models\SearchDetailsMessage.cs" />
+    <Compile Include="Models\AddTorrentMessage.cs" />
+    <Compile Include="Controllers\CommentsDelegate.cs" />
+    <Compile Include="Models\CommentsMessage.cs" />
+    <Compile Include="Models\TorrentDetailsMessage.cs" />
+    <Compile Include="Controllers\AboutController.cs" />
+    <Compile Include="Models\TorrentChangedMessage.cs" />
+    <Compile Include="Controllers\CommentCellController.cs" />
+    <Compile Include="Models\EmptyUrlMessage.cs" />
+    <Compile Include="Models\DonateMessage.cs" />
+    <InterfaceDefinition Include="Views\MainWindow.xib" xmlns="" />
+    <InterfaceDefinition Include="Views\TextFieldCell.xib" xmlns="" />
+    <InterfaceDefinition Include="Views\TorrentCell.xib" xmlns="" />
+    <InterfaceDefinition Include="Views\SearchResultCell.xib" xmlns="" />
+    <InterfaceDefinition Include="Views\CommentCell.xib" xmlns="" />
+    <Compile Include="Controllers\FilesDelegate.cs" />
+    <Compile Include="Models\FilesMessage.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties>
+        <Deployment.LinuxDeployData generateScript="False" />
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+  <ItemGroup>
+    <Content Include="uTorrent114x114.png" />
+    <Content Include="Images\Settings.png" />
+    <Content Include="uTorrent29x29.png" />
+    <Content Include="uTorrent57x57.png" />
+    <Content Include="uTorrent58x58.png" />
+    <Content Include="Settings.bundle\Root.plist">
+    </Content>
+    <Content Include="Default.png" />
+    <Content Include="..\..\Paypal\Donate.gif">
+      <Link>Images\Donate.gif</Link>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Views\" />
+    <Folder Include="Images\" />
+    <Folder Include="Settings.bundle\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\System.iPhone\System.iPhone.csproj">
+      <Project>{E7587240-02DE-4B41-933E-A3DEB0D469B9}</Project>
+      <Name>System.iPhone</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\HtmlAgilityPack\HtmlAgilityPack.csproj">
+      <Project>{1F6318A8-B3E7-4B2B-92DC-F7530B2D0470}</Project>
+      <Name>HtmlAgilityPack</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\uController.API\uController.API.csproj">
+      <Project>{3F0B34B5-1445-48E9-A4CB-10F26DA30038}</Project>
+      <Name>uController.API</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
