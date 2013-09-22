@@ -14,9 +14,9 @@
 	<key>CFBundleIdentifier</key>
 	<string>com.hitcents.ucontroller</string>
 	<key>CFBundleVersion</key>
-	<string>1.1.1</string>
+	<string>1.1.2</string>
 	<key>MinimumOSVersion</key>
-	<string>3.0</string>
+	<string>6.0</string>
 	<key>NSMainNibFile</key>
 	<string>MainWindow</string>
 	<key>UIDeviceFamily</key>
@@ -30,5 +30,24 @@
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
+	<key>UIStatusBarTintParameters</key>
+	<dict>
+		<key>UINavigationBar</key>
+		<dict>
+			<key>Style</key>
+			<string>UIBarStyleDefault</string>
+			<key>Translucent</key>
+			<false/>
+			<key>TintColor</key>
+			<dict>
+				<key>Red</key>
+				<real>0.2</real>
+				<key>Green</key>
+				<real>0.666666666666667</real>
+				<key>Blue</key>
+				<real>0.2</real>
+			</dict>
+		</dict>
+	</dict>
 </dict>
 </plist>
